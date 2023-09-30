@@ -60,13 +60,9 @@ function Chat() {
              contacts={contacts} 
              currentUser={currentUser} 
              changeChat={handleChatChange}/>
-             { isLoaded && currentChat === undefined ? (
-              <Welcome
-              currentUser={currentUser}
-             />
-             ) : (
-              <ChatContainer currentChat={currentChat} currentUser={currentUser} socket={socket} />
-             )
+             { isLoaded && currentChat === undefined ? 
+             (<Welcome currentUser={currentUser}/>):
+              (<ChatContainer currentChat={currentChat} currentUser={currentUser} socket={socket} />)
 
              }
              

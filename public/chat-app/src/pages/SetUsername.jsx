@@ -83,7 +83,7 @@ export default function SetUsername() {
   return (
     <>
       <FormContainer>
-         {email && ( 
+         {/* {email && (  */}
           <form action="" onSubmit={(event) => handleSubmit(event)}>
             <span>Check Username Availablity</span>
             <div className="row">
@@ -120,7 +120,7 @@ export default function SetUsername() {
               Create User
             </button>
           </form>
-         )} 
+         {/* )}  */}
       </FormContainer>
       <ToastContainer />
     </>
@@ -144,7 +144,7 @@ const FormContainer = styled.div`
       height: 0.5rem;
     }
     label.success {
-      color: #39ff14;
+      color: #2fd80f;
     }
     label.danger {
       color: #ff3131;
@@ -178,9 +178,9 @@ const FormContainer = styled.div`
     }
   }
   .success {
-    border-color: #39ff14;
+    border-color: #2fd80f;
     &:focus {
-      border-color: #39ff14;
+      border-color: #2fd80f;
     }
   }
   .danger {
